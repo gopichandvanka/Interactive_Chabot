@@ -1,0 +1,66 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml>
+   <category>
+      <pattern> HELLO ALICE </pattern>
+      
+      <template>
+         Hello User
+      </template>
+      
+   </category>
+<category>
+<pattern>
+what is your name ^
+</pattern>
+<template>
+My name is intellinum bot.
+</template>
+</category>
+<category>
+<pattern>
+My name is *
+</pattern>
+<template>Nice to meet you, <set name="name"><star/></set></template>
+</category>
+<category>
+<pattern>
+what is my name ^
+</pattern>
+<template>
+<template>Hello <get name="name"/></template>
+</template>
+</category>
+<category>
+    <pattern>
+        ^ Item ^ warehouse ^
+    </pattern>
+    <template>
+        item_<first><star index = "2"/></first> warehouse_<star index = "3"/>
+    </template>
+</category>
+
+<category>
+    <pattern>
+        ^ warehouse ^ item ^
+    </pattern>
+    <template>
+        warehouse_<first><star index = "2"/></first> item_<star index = "3"/>
+    </template>
+</category>
+<category>
+<pattern>
+root word of *
+</pattern>
+<template>
+<map name = "synset"><star/></map>
+</template>
+</category>
+<category>
+<pattern>
+singular word of *
+</pattern>
+<template>
+<map name = "plural2singular"><star/></map>
+</template>
+</category>
+</aiml>

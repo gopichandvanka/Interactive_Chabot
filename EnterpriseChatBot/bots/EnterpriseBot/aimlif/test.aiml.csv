@@ -1,0 +1,8 @@
+0,HELLO ALICE,*,*,Hello User,test.aiml
+0,WHAT IS YOUR NAME ^,*,*,My name is intellinum bot.,test.aiml
+0,MY NAME IS *,*,*,Nice to meet you#Comma <set name="name"><star/></set>,test.aiml
+0,WHAT IS MY NAME ^,*,*,<template>Hello <get name="name"/></template>,test.aiml
+0,^ ITEM ^ WAREHOUSE ^,*,*,item_<first><star index="2"/></first> warehouse_<star index="3"/>,test.aiml
+0,^ WAREHOUSE ^ ITEM ^,*,*,warehouse_<first><star index="2"/></first> item_<star index="3"/>,test.aiml
+0,ROOT WORD OF *,*,*,<map name="synset"><star/></map>,test.aiml
+0,SINGULAR WORD OF *,*,*,<map name="plural2singular"><star/></map>,test.aiml

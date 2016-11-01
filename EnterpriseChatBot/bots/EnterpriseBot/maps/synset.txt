@@ -1,0 +1,15 @@
+depot:warehouse
+storehouse:warehouse
+store:warehouse
+storeroom:warehouse
+storage:warehouse
+stockroom:warehouse
+thing:item
+article:item
+object:item
+artifact:item
+piece:item
+product:item
+element:item
+constituent:item
+component:item
